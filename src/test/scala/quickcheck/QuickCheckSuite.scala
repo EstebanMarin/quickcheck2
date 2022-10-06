@@ -38,17 +38,17 @@ class QuickCheckSuite extends munit.FunSuite:
     checkBogus(new QuickCheckHeap with quickcheck.test.Bogus2BinomialHeap)
   }
 
-  // test("Bogus (3) binomial heap does not satisfy properties. (10pts)") {
-  //   checkBogus(new QuickCheckHeap with quickcheck.test.Bogus3BinomialHeap)
-  // }
+  test("Bogus (3) binomial heap does not satisfy properties. (10pts)") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus3BinomialHeap)
+  }
 
-  // test("Bogus (4) binomial heap does not satisfy properties. (10pts)") {
-  //   checkBogus(new QuickCheckHeap with quickcheck.test.Bogus4BinomialHeap)
-  // }
+  test("Bogus (4) binomial heap does not satisfy properties. (10pts)") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus4BinomialHeap)
+  }
 
-  // test("Bogus (5) binomial heap does not satisfy properties. (10pts)") {
-  //   checkBogus(new QuickCheckHeap with quickcheck.test.Bogus5BinomialHeap)
-  // }
+  test("Bogus (5) binomial heap does not satisfy properties. (10pts)") {
+    checkBogus(new QuickCheckHeap with quickcheck.test.Bogus5BinomialHeap)
+  }
 
   import scala.concurrent.duration.*
   override val munitTimeout = 10.seconds
